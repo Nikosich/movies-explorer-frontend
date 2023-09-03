@@ -1,0 +1,95 @@
+.techs {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 100px 70px;
+}
+
+.techs__title {
+  margin: 0;
+  padding-bottom: 23px;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  color: black;
+  border-bottom: 1px black solid;
+  font-style: normal;
+  letter-spacing: -0.88px;
+}
+
+.techs__secondtitle {
+  margin: 90px 0 26px;
+  padding: 0;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -2px;
+  color: #000;
+}
+
+.techs__description {
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #000;
+}
+
+.techs__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 90px);
+  grid-template-rows: repeat(auto-fit, 60px);
+  justify-content: center;
+  margin: 100px auto 0;
+  padding: 0;
+  list-style: none;
+  gap: 10px;
+}
+
+.techs__techno {
+  color: #000;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  padding: 22px 0;
+  flex-shrink: 0;
+  background-color: #e8e8e8;
+}
+
+@media screen and (max-width: 800px) {
+  .techs {
+    padding: 90px 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .techs {
+    background-color: white;
+    padding: 60px 18px 70px;
+  }
+
+  .techs__title {
+    font-size: 18px;
+  }
+
+  .techs__secondtitle {
+    margin: 60px 0 24px;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: -1.2px;
+  }
+
+  .techs__list {
+    margin-top: 80px;
+  }
+}

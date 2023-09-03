@@ -1,0 +1,160 @@
+.search {
+  padding: 70px 70px 10px;
+  background-color: #fff;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.search__form {
+  border-radius: 9px;
+  background: #fdfdfd;
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.search__searcher {
+  display: flex;
+  justify-content: flex-start;
+  padding: 19px 30px 19px 19px;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.search__icon {
+  width: 34px;
+  height: 34px;
+  margin: 0;
+  padding: 0;
+}
+
+.search__input {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  width: 100%;
+  font-weight: 400;
+  line-height: 20px;
+  border: none;
+  background-color: transparent;
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  border-radius: 5px;
+}
+
+.search__input:focus {
+  outline: 2px solid rgba(52, 86, 243, 0.6);
+  outline-offset: 5px;
+}
+
+.search__input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #a0a0a0;
+  text-align: start;
+}
+
+.search__submit {
+  background-color: black;
+  background-size: cover;
+  color: white;
+  background-position: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 11px;
+  border-radius: 20px;
+  border: none;
+  width: 58px;
+  height: 34px;
+  background-repeat: no-repeat;
+  padding: 0;
+  flex-shrink: 0;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0s;
+}
+
+.search__submit:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.search__shorts {
+  border-left: 1px #e8e8e8 solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 30px;
+  height: 40px;
+  column-gap: 14px;
+}
+
+.search__text {
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+}
+
+.search-line {
+  border-bottom: 1px solid #e8e8e8;
+  margin-top: 65px;
+}
+
+@media screen and (max-width: 800px) {
+  .search {
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 30px 10px;
+  }
+
+  .search__shorts {
+    padding: 0 20px 0 20px;
+  }
+
+  .search__searcher {
+    padding: 19px;
+  }
+
+  .search-line {
+    margin-top: 110px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search {
+    padding: 80px 10px 10px;
+  }
+
+  .search__form {
+    background-color: white;
+    border-radius: 0;
+    box-shadow: none;
+    flex-direction: column;
+  }
+
+  .search__searcher {
+    padding: 19px;
+    margin-bottom: 45px;
+    background: #fdfdfd;
+    box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 9px;
+  }
+
+  .search__shorts {
+    border: none;
+  }
+
+  .search__text {
+    font-size: 11px;
+  }
+
+  .search-line {
+    margin-top: 44px;
+  }
+}

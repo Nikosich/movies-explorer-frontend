@@ -1,0 +1,21 @@
+.movies-list {
+  margin: 70px 0 28px;
+  display: flex;
+  gap: 60px 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .movies-list {
+    margin-bottom: 12px;
+    row-gap: 47px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .movies-list {
+    margin: 40px 0 13px;
+    row-gap: 39px;
+  }
+}

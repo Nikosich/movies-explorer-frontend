@@ -1,0 +1,172 @@
+.about {
+  background-color: #fff;
+  padding: 110px 70px 100px;
+}
+
+.about__title {
+  color: black;
+  border-bottom: 1px black solid;
+  margin: 0;
+  padding-bottom: 23px;
+  text-align: left;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.88px;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+  max-width: 600px;
+  padding-right: 20px;
+}
+
+.about__columns {
+  display: flex;
+  margin: 66px 0 0;
+  justify-content: space-between;
+}
+
+.about__name {
+  color: #000;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: -2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.about__age {
+  color: #000;
+  text-align: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 18px 0 26px;
+  padding: 0;
+}
+
+.about__description {
+  max-height: 180px;
+  color: #000;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  padding: 0;
+}
+
+.about__github {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 0;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0s;
+}
+
+.about__github:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.about__photo {
+  border-radius: 10px;
+  margin: 0;
+  max-width: 270px;
+  max-height: 327px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    padding: 90px 50px;
+  }
+
+  .about__name {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.6px;
+  }
+
+  .about__age {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 16px 0 20px;
+  }
+
+  .about__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about__container {
+    max-width: 364px;
+  }
+
+  .about__github {
+    margin-bottom: 8px;
+  }
+
+  .about__photo {
+    max-width: 255px;
+    max-height: 307px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    padding: 70px 14px;
+  }
+
+  .about__name {
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.6px;
+  }
+
+  .about__columns {
+    flex-direction: column;
+    margin: 40px 0 0;
+  }
+
+  .about__container {
+    padding-right: 0;
+    order: 2;
+  }
+
+  .about__github {
+    margin: 40px 0 0;
+  }
+
+  .about__photo {
+    order: 1;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 350px;
+  }
+}
