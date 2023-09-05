@@ -4,7 +4,7 @@ import avatar from "../../images/profilePhoto.png";
 
 const AboutMe = () => {
   return (
-    <section id="about-me" className="about">
+    <section id="me" className="about">
       <h2 className="about__title">Студент</h2>
       <div className="about__columns">
         <div className="about__container">
