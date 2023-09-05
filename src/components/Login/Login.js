@@ -26,8 +26,9 @@ const Login = () => {
             <input
               className="login__inlet"
               id="singin"
-              required
               type="email"
+              placeholder="Введите почту"
+              required
               minLength="2"
               maxLength="40"
               defaultValue={"pochta@yandex.ru"}
@@ -40,11 +41,12 @@ const Login = () => {
             <input
               className="login__inlet"
               id="singin"
-              required
               type="password"
+              placeholder="Введите пароль"
+              required
               minLength="2"
               maxLength="40"
-              defaultValue={"nasoyashykalambur"}
+              defaultValue={"nastoyashykalambur"}
             ></input>
           </div>
         </div>
@@ -53,7 +55,7 @@ const Login = () => {
             path="/"
             element={
               <>
-                <Link to="/" className="login__submit">
+                <Link to="/signin" className="login__submit">
                   Войти
                 </Link>
                 <p className="login__ask">

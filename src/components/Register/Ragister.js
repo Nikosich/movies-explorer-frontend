@@ -30,6 +30,7 @@ const Register = () => {
               type="text"
               minLength="2"
               maxLength="40"
+              placeholder="Введите имя"
               defaultValue={"Никола"}
             ></input>
           </div>
@@ -45,6 +46,7 @@ const Register = () => {
               minLength="2"
               maxLength="40"
               defaultValue={"pochta@yandex.ru"}
+              placeholder="Введите почту"
             ></input>
           </div>
           <div className="register__input">
@@ -58,7 +60,8 @@ const Register = () => {
               required
               minLength="2"
               maxLength="40"
-              defaultValue={"nasoyashykalambur"}
+              placeholder="Введите пароль"
+              defaultValue={"nastoyashykalambur"}
             ></input>
           </div>
         </div>
