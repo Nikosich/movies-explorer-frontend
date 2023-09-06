@@ -4,7 +4,7 @@
 
 .nav-auth__list {
   display: flex;
-  margin: 0 auto;
+  margin: 0 0;
   padding: 0;
   list-style: none;
 }
@@ -15,6 +15,7 @@
   line-height: 16px;
   text-decoration: none;
   transition: opacity 0.2s linear;
+  margin:0;
 }
 
 .nav-auth__link:hover {

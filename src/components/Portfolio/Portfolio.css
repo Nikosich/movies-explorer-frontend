@@ -2,6 +2,7 @@
   padding: 0 70px 125px;
   background-color: #fff;
   font-family: "Inter", Arial, sans-serif;
+  padding-right: 55px;
 }
 
 .portfolio__title {
@@ -61,9 +62,9 @@
 }
 
 .portfolio__arrow {
-  width: 25px;
-  height: 25px;
-  padding-bottom: 19px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: -19px;
 }
 
 @media screen and (max-width: 800px) {
@@ -75,6 +76,10 @@
 
   .portfolio__link {
     font-size: 28px;
+  }
+  .portfolio__arrow {
+    width: 15px;
+    height: 15px;
   }
 }
 

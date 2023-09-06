@@ -53,7 +53,7 @@
 }
 
 .login__inlet {
-  width: 400px;
+  width: 366px;
   font-family: "Inter", Arial, sans-serif;
   font-size: 13px;
   line-height: 16px;
@@ -72,7 +72,7 @@
 .login__submit {
   text-decoration: none;
   font-family: "Inter", Arial, sans-serif;
-  margin: 134px auto 16px;
+  margin: 170px auto 16px 0;
   padding: 13px 0 15px;
   color: #fff;
   text-align: center;
@@ -84,7 +84,7 @@
   border: none;
   background-color: black;
   border-radius: 3px;
-  width: 100%;
+  width: 395px;
   transition: opacity 0.5s ease-in-out 0s;
 }
 
@@ -131,12 +131,13 @@
   }
 
   .login__inlet {
-    width: 240px;
+    width: 230px;
   }
 
   .login__submit {
     font-size: 12px;
-    margin: 222px auto 14px;
+    margin: 267px auto 14px;
+    width: 260px;
   }
 
   .login__ask {

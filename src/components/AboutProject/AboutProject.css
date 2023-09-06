@@ -2,6 +2,7 @@
   font-family: "Inter", Arial, sans-serif;
   background-color: white;
   padding: 110px 70px;
+  padding-right: 55px;
 }
 
 .project__title {
@@ -44,7 +45,7 @@
   font-size: 20px;
   line-height: normal;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   padding: 0;
   text-align: left;
@@ -116,6 +117,12 @@
 
   .project__runtime {
     grid-template-columns: 1fr 3fr;
+  }
+  .project__week_left {
+    width:140px;
+  }
+  .project__week_right {
+    width: 528px;
   }
 }
 

@@ -1,5 +1,6 @@
 .search {
   padding: 70px 70px 10px;
+  padding-right: 55px;
   background-color: #fff;
   font-family: "Inter", Arial, sans-serif;
 }
@@ -75,6 +76,7 @@
   flex-shrink: 0;
   opacity: 1;
   transition: opacity 0.5s ease-in-out 0s;
+  margin-left: 22px;
 }
 
 .search__submit:hover {
