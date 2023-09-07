@@ -9,7 +9,7 @@ function MoviesCard(props) {
   return (
     <>
       <div className="movie">
-        <a className="movie__trailer" rel="noreferrer" target="_blank">
+        <div className="movie__trailer" >
           <img className="movie__image" src={poster} alt="Постер" />
           <button
             className={`${
@@ -30,7 +30,7 @@ function MoviesCard(props) {
             }`}
             type="button"
           ></button>
-        </a>
+        </div>
 
         <div className="movie__info">
           <p className="movie__name">В погоне за Бенкси</p>

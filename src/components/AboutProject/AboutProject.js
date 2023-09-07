@@ -8,14 +8,14 @@ const AboutProject = () => {
       <div className="project__container">
         <div className="project__columns">
           <article className="project__plan">
-            <p className="project__name">Дипломный проект включал 5 этапов</p>
+            <h3 className="project__name">Дипломный проект включал 5 этапов</h3>
             <p className="project__description">
               Составление плана, работу над бэкендом, вёрстку, добавление
               функциональности и&nbsp;финальные доработки.
             </p>
           </article>
           <article className="project__plan">
-            <p className="project__name">На выполнение диплома ушло 5 недель</p>
+            <h3 className="project__name">На выполнение диплома ушло 5 недель</h3>
             <p className="project__description">
               У&nbsp;каждого этапа был мягкий и&nbsp;жёсткий дедлайн, которые
               нужно было соблюдать, чтобы успешно защититься.
