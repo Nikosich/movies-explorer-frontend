@@ -16,7 +16,7 @@ const Login = () => {
           }
         />
       </Routes>
-      <h1 className="login__title">Рады видеть!</h1>
+      <h2 className="login__title">Рады видеть!</h2>
       <form className="login__form">
         <div className="login__inputs">
           <div className="login__input">
