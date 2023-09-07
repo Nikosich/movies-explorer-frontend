@@ -97,8 +97,8 @@
 .about__photo {
   border-radius: 10px;
   margin: 0;
-  max-width: 270px;
-  max-height: 327px;
+  width: 270px;
+  height: 327px;
   object-fit: cover;
 }
 
@@ -133,8 +133,8 @@
   }
 
   .about__photo {
-    max-width: 255px;
-    max-height: 307px;
+    width: 255px;
+    height: 307px;
   }
 }
 
@@ -145,7 +145,7 @@
 
   .about__name {
     margin-top: 40px;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 40px;
     letter-spacing: -1.6px;
   }
@@ -167,7 +167,8 @@
   .about__photo {
     order: 1;
     margin: 0 auto;
-    max-width: 300px;
-    max-height: 350px;
+    margin-top: 15px;
+    width: 292px;
+    height: 352px;
   }
 }

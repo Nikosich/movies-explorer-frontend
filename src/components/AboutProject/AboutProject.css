@@ -67,8 +67,8 @@
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 36px auto;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: flex-start;
   text-align: center;
 }
 
@@ -101,6 +101,7 @@
   color: #a0a0a0;
 }
 
+
 @media screen and (max-width: 800px) {
   .project {
     padding: 90px 50px;
@@ -118,11 +119,9 @@
   .project__runtime {
     grid-template-columns: 1fr 3fr;
   }
-  .project__week_left {
-    width:140px;
-  }
-  .project__week_right {
-    width: 528px;
+  
+  .project__runtime {
+    grid-template-columns: 140px 3fr;
   }
 }
 
@@ -130,6 +129,12 @@
   .project {
     padding: 70px 18px;
   }
+
+  .project__title {
+    font-size: 18px;
+    padding-bottom: 28px;
+  }
+  
 
   .project__container {
     margin: 60px 0 0;
@@ -141,7 +146,7 @@
 
   .project__plan {
     width: 100%;
-    margin: 0 0 58px;
+    margin: 0 0 45px;
   }
 
   .project__name {

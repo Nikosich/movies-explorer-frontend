@@ -57,18 +57,19 @@
 
 @media screen and (max-width: 800px) {
   .footer {
-    padding: 90px 50px;
+    padding: 55px 50px 20px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .footer {
     background-color: white;
-    padding: 80px 10px 20px;
+    padding: 60px 10px 20px;
   }
 
   .footer__title {
     margin-bottom: 30px;
+    font-size: 12px;
   }
 
   .footer__container {
@@ -79,6 +80,7 @@
 
   .footer__date {
     margin-top: 30px;
+    font-size: 12px;
   }
 
   .footer__links {
@@ -87,6 +89,7 @@
     row-gap: 12px;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
   }
 
   .footer__link {

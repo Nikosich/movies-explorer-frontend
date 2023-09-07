@@ -64,7 +64,8 @@
 .portfolio__arrow {
   width: 20px;
   height: 20px;
-  margin-bottom: -19px;
+  
+  align-self: center;
 }
 
 @media screen and (max-width: 800px) {

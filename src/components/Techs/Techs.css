@@ -102,6 +102,8 @@
 
   .techs__title {
     font-size: 18px;
+    width:100%;
+    padding-bottom: 28px;
   }
 
   .techs__secondtitle {
@@ -112,6 +114,7 @@
   }
 
   .techs__list {
-    margin-top: 80px;
+    grid-template-columns: repeat(2, 90px);
+    margin-top: 50px;
   }
 }
