@@ -16,6 +16,11 @@
   height: 38px;
 }
 
+.login__logo:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 .login__form {
   display: flex;
   flex-direction: column;

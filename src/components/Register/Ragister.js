@@ -20,12 +20,12 @@ const Register = () => {
       <form className="register__form">
         <div className="register__inputs">
           <div className="register__input">
-            <label htmlFor="signup" className="register__label">
+            <label htmlFor="name-registe" className="register__label">
               Имя
             </label>
             <input
               className="register__inlet"
-              id="signup"
+              id="signup-name"
               required
               type="text"
               minLength="2"
@@ -35,12 +35,12 @@ const Register = () => {
             ></input>
           </div>
           <div className="register__input">
-            <label htmlFor="signup" className="register__label">
+            <label htmlFor="name-registe" className="register__label">
               E-mail
             </label>
             <input
               className="register__inlet"
-              id="signup"
+              id="signup-email"
               required
               type="email"
               minLength="2"
@@ -50,7 +50,7 @@ const Register = () => {
             ></input>
           </div>
           <div className="register__input">
-            <label htmlFor="signup" className="register__label">
+            <label htmlFor="name-registe" className="register__label">
               Пароль
             </label>
             <input

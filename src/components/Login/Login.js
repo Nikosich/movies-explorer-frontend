@@ -20,12 +20,12 @@ const Login = () => {
       <form className="login__form">
         <div className="login__inputs">
           <div className="login__input">
-            <label htmlFor="singin" className="login__label">
+            <label htmlFor="name-login" className="login__label">
               E-mail
             </label>
             <input
               className="login__inlet"
-              id="singin"
+              id="singin-email"
               type="email"
               placeholder="Введите почту"
               required
@@ -35,12 +35,12 @@ const Login = () => {
             ></input>
           </div>
           <div className="login__input">
-            <label htmlFor="singin" className="login__label">
+            <label htmlFor="name-login" className="login__label">
               Пароль
             </label>
             <input
               className="login__inlet"
-              id="singin"
+              id="singin-password"
               type="password"
               placeholder="Введите пароль"
               required
