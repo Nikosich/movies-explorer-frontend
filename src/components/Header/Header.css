@@ -33,6 +33,11 @@
   height: 38px;
 }
 
+.header__logo:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 .header__nav {
   display: flex;
   align-items: center;
