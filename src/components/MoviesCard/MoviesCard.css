@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 
-.movie__button_save {
+.movie__button {
   position: absolute;
   top: 14px;
   right: 14px;
@@ -32,11 +32,11 @@
   cursor: pointer;
 }
 
-.movie__trailer:hover .movie__button_save {
+.movie__trailer:hover .movie__button {
   opacity: 1;
 }
 
-.movie__button_saved {
+.movie__saved {
   width: 21px;
   height: 21px;
   position: absolute;
@@ -49,13 +49,13 @@
   display: none;
 }
 
-.movie__button_delete {
+.movie__saved_delete {
   width: 21px;
   height: 21px;
   position: absolute;
   top: 14px;
   right: 14px;
-  background-image: url(../../images/close-btn.svg);
+  background-image: url(../../images/save3d.svg);
   background-position: center;
   background-color: white;
   border-radius: 50%;
@@ -64,11 +64,11 @@
   cursor: pointer;
 }
 
-.movie__trailer:hover .movie__button_delete {
+.movie__trailer:hover .movie__saved_delete {
   display: block;
 }
 
-.movie__button_saved:hover {
+.movie__saved:hover {
   background-image: url(../../images/saved_movie.svg);
 }
 
@@ -98,7 +98,7 @@
   border-radius: 3px;
 }
 
-.movie__button_save_active {
+.movie__button_active {
   display: none;
 }
 
@@ -152,7 +152,7 @@
     right: 10px;
   }
 
-  .movie__button_delete {
+  .movie__saved_delete {
     top: 10px;
     right: 10px;
   }

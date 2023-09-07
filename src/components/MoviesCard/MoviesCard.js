@@ -14,8 +14,8 @@ function MoviesCard(props) {
           <button
             className={`${
               location.pathname === "/movies"
-                ? "movie__button_save"
-                : "movie__button_save_active"
+                ? "movie__button"
+                : "movie__button_active"
             }`}
             type="button"
           >
@@ -25,8 +25,8 @@ function MoviesCard(props) {
           <button
             className={`${
               location.pathname === "/movies"
-                ? "movie__button_saved"
-                : "movie__button_delete"
+                ? "movie__saved"
+                : "movie__saved_delete"
             }`}
             type="button"
           ></button>

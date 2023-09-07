@@ -51,7 +51,7 @@ const Navigation = () => {
           >
             Аккаунт{" "}
             <img
-              className="naviagation__link_pic"
+              className="navigation__pic"
               alt="profile"
               src={prof}
             ></img>
