@@ -63,13 +63,13 @@
 }
 
 @media screen and (max-width: 800px) {
-  .footer {
+  .footer__box {
     padding: 55px 50px 20px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .footer {
+  .footer__box {
     background-color: white;
     padding: 60px 10px 20px;
   }

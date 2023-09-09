@@ -99,8 +99,10 @@
 }
 
 @media screen and (max-width: 500px) {
-  .ttechs__container {
-    background-color: white;
+  .techs {
+    background-color:white;
+  }
+  .techs__container {
     padding: 60px 18px 70px;
   }
 
