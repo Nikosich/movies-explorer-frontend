@@ -1,8 +1,12 @@
 .techs {
-  font-family: "Inter", Arial, sans-serif;
   background-color: #f5f5f5;
+}
+
+.techs__container {
+  font-family: "Inter", Arial, sans-serif;
   padding: 100px 70px;
-  padding-right: 55px;
+  max-width: 1140px;
+  margin:auto;
 }
 
 .techs__title {
@@ -69,7 +73,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  .techs {
+  .techs__container {
     padding: 90px 0px;
   }
   .techs__techno{
@@ -95,7 +99,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .techs {
+  .ttechs__container {
     background-color: white;
     padding: 60px 18px 70px;
   }

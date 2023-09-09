@@ -22,12 +22,12 @@ const Profile = () => {
           ></input>
         </div>
         <div className="profile__input">
-          <label htmlFor="acc-name" className="profile__lable">
+          <label htmlFor="acc-email" className="profile__lable">
             E-mail
           </label>
           <input
             className="profile__intel"
-            id="acc-name"
+            id="acc-email"
             required
             type="text"
             minLength="2"

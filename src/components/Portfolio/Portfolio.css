@@ -2,7 +2,8 @@
   padding: 0 70px 125px;
   background-color: #fff;
   font-family: "Inter", Arial, sans-serif;
-  padding-right: 55px;
+  max-width: 1140px;
+  margin: auto;
 }
 
 .portfolio__title {

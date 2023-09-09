@@ -1,27 +1,20 @@
 .header {
-  font-family: "Inter", Arial, sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 70px;
-  box-sizing: border-box;
-  overflow: hidden;
   background-color: #ffffff;
-  max-width: 100%;
-  padding-right: 55px;
 }
 
 .header__auth {
-  font-family: "Inter", Arial, sans-serif;
   background-color: rgba(243, 193, 248, 1);
+}
+
+.header__container {
+  max-width: 1280px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 70px;
   box-sizing: border-box;
   overflow: hidden;
-  max-width: 100%;
-  padding-right: 55px;
 }
 
 .header__hidden {

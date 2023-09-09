@@ -1,7 +1,13 @@
 .footer {
+  text-align: center;
+}
+
+.footer__box{
   font-family: "Inter", Arial, sans-serif;
   padding: 80px 70px 20px;
   background-color: #fff;
+  max-width: 1140px;
+  margin: auto;
 }
 
 .footer__hidden {
@@ -18,6 +24,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
 }
 
 .footer__container {

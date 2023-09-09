@@ -2,7 +2,8 @@
   font-family: "Inter", Arial, sans-serif;
   background-color: white;
   padding: 110px 70px;
-  padding-right: 55px;
+  max-width: 1140px;
+  margin: auto;
 }
 
 .project__title {
@@ -26,7 +27,6 @@
 
 .project__columns {
   display: flex;
-  width: 100%;
 }
 
 .project__plan {
@@ -49,6 +49,7 @@
   margin: 0;
   padding: 0;
   text-align: left;
+  letter-spacing: -0.8px;
 }
 
 .project__description {

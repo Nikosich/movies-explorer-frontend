@@ -80,12 +80,13 @@
 }
 
 .movie__name {
-  width: 75%;
-  height: 16px;
-  margin: 0;
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 500;
+  color: #000;
+font-family: Inter;
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin:0;
 }
 
 .movie__duration {
@@ -162,7 +163,6 @@
   }
 
   .movie__name {
-    width: 80%;
     height: 15px;
     font-size: 12px;
     line-height: 15px;

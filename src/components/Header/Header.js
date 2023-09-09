@@ -19,7 +19,7 @@ const Header = () => {
           ? "header__auth"
           : "header"
       }`}
-    >
+    > <div className="header__container">
       <Routes>
         {["/", "/movies", "/saved-movies", "/profile"].map((path) => (
           <Route
@@ -55,6 +55,7 @@ const Header = () => {
       <Routes>
         <Route path="/" element={<NavAuth />} />
       </Routes>
+      </div>
     </header>
   );
 };

@@ -6,12 +6,13 @@
 .navtab__list {
   list-style: none;
   padding: 0;
-  margin: 0;
   display: flex;
   color: white;
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 24px;
+  max-width: 1280px;
+  margin: auto;
 }
 
 @media (min-width: 800px) {

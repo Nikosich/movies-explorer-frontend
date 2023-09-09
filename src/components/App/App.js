@@ -1,5 +1,5 @@
-import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Main from "../Main/Main";
@@ -12,7 +12,7 @@ import Page404 from "../Page404/Page404";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />

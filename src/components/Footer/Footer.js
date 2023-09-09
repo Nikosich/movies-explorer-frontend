@@ -14,7 +14,7 @@ const Footer = () => {
           ? "footer"
           : "footer__hidden"
       }`}
-    >
+    > <div className="footer__box">
       <p className="footer__title">
         Учебный проект Яндекс.Практикум х BeatFilm.
       </p>
@@ -42,6 +42,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
+      </div>
       </div>
     </footer>
   );
