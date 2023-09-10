@@ -1,0 +1,170 @@
+.movie {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie__trailer {
+  height: 201px;
+  position: relative;
+}
+
+.movie__image {
+  width: 360px;
+  height: 201px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.movie__button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 10px;
+  line-height: 9px;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 6px 7px;
+  z-index: 100;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.movie__trailer:hover .movie__button {
+  opacity: 1;
+}
+
+.movie__saved {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-image: url(../../images/saved_movie.svg);
+  background-color: transparent;
+  z-index: 1;
+  border: none;
+  display: none;
+}
+
+.movie__saved_delete {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-image: url(../../images/save3d.svg);
+  background-position: center;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.movie__trailer:hover .movie__saved_delete {
+  display: block;
+}
+
+.movie__saved:hover {
+  background-image: url(../../images/saved_movie.svg);
+}
+
+.movie__info {
+  margin: 14px 14px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie__name {
+  color: #000;
+font-family: Inter;
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin:0;
+}
+
+.movie__duration {
+  margin: 0;
+  padding: 4px 9px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #a0a0a0;
+  background: #f9f9f9;
+  border-radius: 3px;
+}
+
+.movie__button_active {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .movie {
+    max-width: 339px;
+  }
+
+  .movie__trailer {
+    height: 190px;
+  }
+
+  .movie__image {
+    width: 339px;
+    height: 190px;
+  }
+
+  .movie__info {
+    margin: 25px 0 0 0;
+  }
+
+  .movie__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .movie {
+    max-width: 300px;
+  }
+
+  .movie__trailer {
+    height: 168px;
+  }
+
+  .movie__image {
+    width: 300px;
+    height: 168px;
+  }
+
+  .movie__like {
+    top: 10px;
+    right: 10px;
+    opacity: 1;
+  }
+
+  .movie__like_saved {
+    top: 10px;
+    right: 10px;
+  }
+
+  .movie__saved_delete {
+    top: 10px;
+    right: 10px;
+  }
+
+  .movie__info {
+    margin-top: 16px;
+  }
+
+  .movie__name {
+    height: 15px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

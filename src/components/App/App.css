@@ -1,0 +1,10 @@
+.app {
+  text-align: center;
+  background-color: white;
+  font-weight: 400;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
