@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 
 const SearchForm = ({ onSearch, isChecked, setIsChecked, onFilterCheckbox }) => {
   const location = useLocation();
-  const {formValue, handleChange, setInput} = Validation();
+  const {formValue, handleChange, setInput, isValid} = Validation();
 
   React.useEffect(() => {
     if (location.pathname === "/movies") {
@@ -25,7 +25,7 @@ const SearchForm = ({ onSearch, isChecked, setIsChecked, onFilterCheckbox }) => 
   }
   return (
     <section className="search">
-      <form className="search__form"  onSubmit={handleSubmit}>
+      <form className="search__form"  onSubmit={handleSubmit} >
         <div className="search__searcher">
           <img className="search__icon" src={search} alt="search" />
           <input

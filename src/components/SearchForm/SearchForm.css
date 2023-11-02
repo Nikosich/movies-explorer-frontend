@@ -117,6 +117,10 @@
   text-align: center;
 }
 
+.search__error_hidden {
+  display:block;
+}
+
 @media screen and (max-width: 800px) {
   .search {
     flex-direction: column;
