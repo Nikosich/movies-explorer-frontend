@@ -16,6 +16,7 @@ import Page404 from "../Page404/Page404";
 import CurrentUserContext from "../../contexts/CurrentUserContext";
 import Preloader from "../Preloader/Preloader";
 import ProtectedRoute from "../../utils/ProtectedRoute";
+import NotLoggedinRoute from "../../utils/NotLoggedinRoute";
 
 function App() {
   const [currentUser, setCurrentUser] = useState({});
@@ -418,7 +419,9 @@ function App() {
           <Route
             path="/signup"
             element={
-              <Register
+              <NotLoggedinRoute
+                element={Register}
+                loggedIn={loggedIn}
                 handleRegister={handleRegister}
                 errorMessage={errorMessage}
                 setErrorMessage={setErrorMessage}
@@ -429,7 +432,9 @@ function App() {
           <Route
             path="/signin"
             element={
-              <Login
+              <NotLoggedinRoute
+                element={Login}
+                loggedIn={loggedIn}
                 handleLogin={handleLogin}
                 errorMessage={errorMessage}
                 setErrorMessage={setErrorMessage}
