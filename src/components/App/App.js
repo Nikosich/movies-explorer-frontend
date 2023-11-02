@@ -232,6 +232,8 @@ function App() {
       .finally(() => setIsLoading(false));
   }
 
+  console.log(loggedIn)
+
   function handleRegister(formValue) {
     setIsAuthLoading(true);
     auth

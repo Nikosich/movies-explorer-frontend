@@ -32,13 +32,15 @@ setData(currentUser.name, currentUser.email);
 console.log(currentUser)
 
 function handleEditProfileSubmit(e) {
-e.preventDefault();
+ e.preventDefault();
 onEditProfileSubmit(formValue);
+console.log(currentUser.name)
 }
 
 React.useEffect(() => {
 if ((formValue.name === currentUser.name) && (formValue.email === currentUser.email)) {
 setButtonDisabled(true);
+console.log(currentUser.name);
 } else {
 setButtonDisabled(false);
 }
