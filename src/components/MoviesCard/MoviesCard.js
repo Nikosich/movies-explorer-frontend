@@ -1,16 +1,35 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import poster from "../../images/movie_pic.png";
 import "./MoviesCard.css";
 
-function MoviesCard(props) {
+function MoviesCard({movie, onSave, onDeleteMovie }) {
   let location = useLocation();
+
+  const hours = Math.floor(movie.duration/60);
+  const min = movie.duration-(hours*60);
+  
+
+  function handleSaveMovie(e) {
+    e.preventDefault();
+    onSave(movie);
+  }
+
+  function handleDeleteMovie(e) {
+    e.preventDefault();
+    onDeleteMovie(movie);
+  }
 
   return (
     <>
       <div className="movie">
-        <div className="movie__trailer" >
-          <img className="movie__image" src={poster} alt="Постер" />
+        <div className="movie__trailer" >       
+        <a href={movie.trailerLink} target="_blank" rel="noreferrer"> 
+        {location.pathname === "/movies" ? (
+          <img src={`https://api.nomoreparties.co${movie.image.url}`} alt="Постер" className="movie__image" />
+        ) : (
+          <img src={`https://api.nomoreparties.co${movie.image}`} alt="Постер" className="movie__image" />
+        )} </a> 
+        
           <button
             className={`${
               location.pathname === "/movies"
@@ -18,6 +37,7 @@ function MoviesCard(props) {
                 : "movie__button_active"
             }`}
             type="button"
+            onClick={handleSaveMovie}
           >
             {" "}
             Сохранить{" "}
@@ -29,12 +49,13 @@ function MoviesCard(props) {
                 : "movie__saved_delete"
             }`}
             type="button"
+            onClick={handleDeleteMovie}
           ></button>
         </div>
 
         <div className="movie__info">
-          <p className="movie__name">В погоне за Бенкси</p>
-          <p className="movie__duration">1ч42м</p>
+          <p className="movie__name">{movie.nameRU}</p>
+          <p className="movie__duration">{hours ? `${hours}ч` : ''} {min ? `${min}м` : ''}</p>
         </div>
       </div>
     </>

@@ -24,6 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  float: right;
 }
 
 .navigation__list-container {
@@ -96,6 +97,10 @@
   margin-left:22px;
   background-color: rgba(249, 249, 249, 1);
   border-radius: 6px;
+}
+
+.naviagtion__link_main {
+  background-color: rgba(243, 193, 248, 1);;
 }
 
 @media screen and (max-width: 800px) {

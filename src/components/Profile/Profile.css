@@ -68,7 +68,8 @@
   display: none;
   font-family: "Inter", Arial, sans-serif;
   border: none;
-  background-color: #2be080;
+  background-color: black;
+  color:white;
   border-radius: 5px;
   width: 150px;
   margin: 30px auto 0;

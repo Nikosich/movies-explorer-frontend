@@ -98,6 +98,11 @@
   cursor: pointer;
 }
 
+.login__submit:disabled {
+  background: #F9F9F9;
+  color: #A0A0A0;
+}
+
 .login__ask {
   color: #a0a0a0;
   font-size: 14px;
@@ -122,6 +127,15 @@
 .login__register:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+.login__span {
+  font-family: "Inter", Arial, sans-serif;
+  margin: 6px 0 8px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FF3055;
 }
 
 @media screen and (max-width: 800px) {

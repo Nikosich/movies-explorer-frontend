@@ -1,28 +1,26 @@
 import React from "react";
 import "./MoviesCardList.css";
-import Cards from "../MoviesCard/MoviesCard";
-import AddFilm from "../AddFilm/AddFilm";
+import MoviesCard from "../MoviesCard/MoviesCard";
 
-const MoviesCardList = () => {
-  const [seenCards, setSeenCards] = React.useState(12);
 
-  const handleShowMore = () => {
-    setSeenCards((notSeenCards) => {
-      const cards= 16 - notSeenCards;
-      return notSeenCards + Math.min(12, cards);
-    });
-  };
-
+const MoviesCardList = ({ movies, onSave, onDeleteMovie }) => {
+  
   return (
     <>
-      <section className="movies-list">
-        {[...Array(seenCards)].map((_, index) => (
-          <Cards key={index} />
-        ))}
-      </section>
-      {seenCards < 16 && <AddFilm handleShowMore={handleShowMore} />}
-    </>
-  );
+    <section className="movies-list">
+      {movies?.map((movie) => {
+        return (
+          <MoviesCard
+            key={movie.id}
+            movie={movie}
+            onSave={onSave}
+            onDeleteMovie={onDeleteMovie}
+          />
+        );
+      })}
+    </section>
+  </>
+);
 };
 
 export default MoviesCardList;
