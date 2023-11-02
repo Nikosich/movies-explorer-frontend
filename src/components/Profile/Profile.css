@@ -91,6 +91,11 @@
   cursor: pointer;
 }
 
+.profile__save:disabled {
+  cursor: unset;
+  opacity: 0.2;
+}
+
 .profile__edit {
   font-family: "Inter", Arial, sans-serif;
   margin: 220px auto 16px;

@@ -31,9 +31,9 @@ const SearchForm = ({ onSearch, isChecked, setIsChecked, onFilterCheckbox }) => 
           <input
             type="text"
             name="movie"
+            required
             placeholder="Фильм"
             className="search__input"
-            required
             value={formValue.movie || ""}
             onChange={handleChange}
             minLength="1"
