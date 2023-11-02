@@ -46,7 +46,12 @@
   background-color: transparent;
   z-index: 1;
   border: none;
-  display: none;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.movie__saved_incative {
+ display: none;
 }
 
 .movie__saved_delete {

@@ -7,6 +7,7 @@ function MoviesCard({movie, onSave, onDeleteMovie }) {
 
   const hours = Math.floor(movie.duration/60);
   const min = movie.duration-(hours*60);
+  const ButtonClass = `${(movie.isSaved) ? "movie__saved" : "movie__button"}`;
   
 
   function handleSaveMovie(e) {
@@ -29,11 +30,10 @@ function MoviesCard({movie, onSave, onDeleteMovie }) {
         ) : (
           <img src={`https://api.nomoreparties.co${movie.image}`} alt="Постер" className="movie__image" />
         )} </a> 
-        
           <button
             className={`${
               location.pathname === "/movies"
-                ? "movie__button"
+                ? ButtonClass
                 : "movie__button_active"
             }`}
             type="button"
@@ -45,7 +45,7 @@ function MoviesCard({movie, onSave, onDeleteMovie }) {
           <button
             className={`${
               location.pathname === "/movies"
-                ? "movie__saved"
+                ? "movie__saved_incative"
                 : "movie__saved_delete"
             }`}
             type="button"
