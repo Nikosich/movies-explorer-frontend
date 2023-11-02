@@ -42,7 +42,7 @@ function App() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const GetCheckToken = () => {
+  const getCheckToken = () => {
     const jwt = localStorage.getItem("jwt");
     if (jwt) {
       auth
@@ -64,7 +64,7 @@ function App() {
   };
 
   useEffect(() => {
-    GetCheckToken();
+    getCheckToken();
   }, []);
 
   useEffect(() => {
