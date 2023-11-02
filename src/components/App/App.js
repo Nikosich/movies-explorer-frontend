@@ -447,6 +447,7 @@ function App() {
             element={
               <ProtectedRoute
                 element={Movies}
+                loggedIn={loggedIn}
                 handleSearch={handleMovieSearch}
                 movies={movies}
                 handleShowMore={handleAddMoreMovie}
@@ -456,7 +457,6 @@ function App() {
                 setIsChecked={setIsFilterChecked}
                 onFilterCheckbox={handleFilterCheck}
                 onSaveMovie={handleSaveMovie}
-                loggedIn={loggedIn}
               />
             }
           />

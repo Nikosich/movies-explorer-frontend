@@ -153,6 +153,10 @@ margin:0;
     right: 10px;
   }
 
+  .movie__button {
+    opacity: 1;
+  }
+
   .movie__saved_delete {
     top: 10px;
     right: 10px;
