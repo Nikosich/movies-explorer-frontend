@@ -24,6 +24,7 @@ function App() {
   const [filterMovies, setFilterMovies] = useState([]);
   const [movies, setMovies] = useState(null);
   const [firstMoviesAmount, setFirstMoviesAmount] = useState(0);
+  const [windowSize, setWindowSize] = useState(getWindowSize());
   const [addMoviesAmount, setAddMoviesAmount] = useState(0);
   const [isMore, setIsMore] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -41,7 +42,7 @@ function App() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const checkToken = () => {
+  const GetCheckToken = () => {
     const jwt = localStorage.getItem("jwt");
     if (jwt) {
       auth
@@ -63,7 +64,7 @@ function App() {
   };
 
   useEffect(() => {
-    checkToken();
+    GetCheckToken();
   }, []);
 
   useEffect(() => {
@@ -111,6 +112,23 @@ function App() {
     }
     setIsPreloaderLoading(false);
   }, [location]);
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
 
   function setMoviesAmounts() {
     if (windowSize.innerWidth > 1007) {
