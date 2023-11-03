@@ -6,7 +6,6 @@ import { useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const [showItems, setShowItems] = useState(false);
-
   let location = useLocation();
 
   const handleToggleMenu = () => setShowItems(!showItems);
@@ -37,12 +36,12 @@ const Navigation = () => {
                 </Link>
               </li>
               <li className="navigation__list-item">
-                <NavLink to="/movies" className="navigation__link">
+                <NavLink to="/movies" className="navigation__link" style={({ isActive }) =>({color: isActive ? 'pink' : 'black'})}>
                   Фильмы
                 </NavLink>
               </li>
               <li className="navigation__list-item">
-                <NavLink to="/saved-movies" className="navigation__link">
+                <NavLink to="/saved-movies" className="navigation__link" style={({ isActive }) =>({color: isActive ? 'pink' : 'black'})}>
                   Сохранённые фильмы
                 </NavLink>
               </li>

@@ -25,7 +25,7 @@ const SearchForm = ({ onSearch, isChecked, setIsChecked, onFilterCheckbox }) => 
   }
   return (
     <section className="search">
-      <form className="search__form"  onSubmit={handleSubmit} >
+      <form className="search__form"  noValidate onSubmit={handleSubmit} >
         <div className="search__searcher">
           <img className="search__icon" src={search} alt="search" />
           <input
@@ -47,6 +47,7 @@ const SearchForm = ({ onSearch, isChecked, setIsChecked, onFilterCheckbox }) => 
           onFilterCheckbox={onFilterCheckbox}/>
           <h2 className="search__text">Короткометражки</h2>
         </div>
+        {isValid && <span className="search__error">Нужно ввести ключевое слово</span>}
       </form>
       <div className="search-line"></div>
     </section>
