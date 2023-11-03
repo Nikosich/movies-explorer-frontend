@@ -232,7 +232,6 @@ function App() {
       .finally(() => setIsLoading(false));
   }
 
-  console.log(loggedIn)
 
   function handleRegister(formValue) {
     setIsAuthLoading(true);
@@ -378,24 +377,6 @@ function App() {
     }
   }
 
-  function onEditProfileSubmit(formValue) {
-    setIsLoading(true);
-    mainApi
-      .editProfile(formValue)
-      .then((data) => {
-        setCurrentUser(data.user);
-        setErrorMessageProfile("");
-        setIsEditing(false);
-        alert("Изменения сохранены");
-      })
-      .catch((err) => {
-        setErrorMessageProfile(err.message);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
-  }
-
   function handleLogout() {
     localStorage.clear();
     setMovies([]);
@@ -409,9 +390,9 @@ function App() {
     setErrorMessageProfile("");
   }
 
-  return isPreloaderLoading ? (
+  return (isPreloaderLoading ? 
     <Preloader />
-  ) : (
+   : (
     <CurrentUserContext.Provider value={currentUser}>
       <div className="app">
         <Header loggedIn={loggedIn} />
@@ -471,7 +452,6 @@ function App() {
                 onLogout={handleLogout}
                 isEditing={isEditing}
                 setIsEditing={setIsEditing}
-                onEditProfileSubmit={onEditProfileSubmit}
                 errorMessageProfile={errorMessageProfile}
                 loggedIn={loggedIn}
                 buttonDisabled={buttonDisabled}
@@ -500,7 +480,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </CurrentUserContext.Provider>
+    </CurrentUserContext.Provider>)
   );
 }
 
