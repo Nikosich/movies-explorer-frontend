@@ -4,7 +4,7 @@ import NavAuth from "../NavigationAuth/NavigationAuth";
 import Navigation from "../Navigation/Navigation";
 import { Link, Routes, Route, useLocation } from "react-router-dom";
 
-const Header = () => {
+const Header = ({loggedIn}) => {
   let location = useLocation();
 
   return (
@@ -53,7 +53,9 @@ const Header = () => {
         </Routes>
       </div>
       <Routes>
-        <Route path="/" element={<NavAuth />} />
+      {!loggedIn ? (<Route path="/" element={<NavAuth />} />) : (
+        <Route path="/" element={<Navigation />} />
+      )}
       </Routes>
       </div>
     </header>

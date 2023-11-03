@@ -93,10 +93,11 @@
   cursor: pointer;
 }
 
-.profile__save:hover {
-  opacity: 0.6;
-  cursor: pointer;
+.register__submit:disabled {
+  background: #F9F9F9;
+  color: #A0A0A0;
 }
+
 
 .register__question {
   color: #a0a0a0;

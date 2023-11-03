@@ -23,7 +23,7 @@
   transition: 0.2s;
 }
 
-.checkbox__use:before {
+.checkbox__use::before {
   content: "";
   position: absolute;
   top: 2px;

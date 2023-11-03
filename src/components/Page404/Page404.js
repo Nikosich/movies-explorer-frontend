@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./Page404.css";
 
 const Page404 = () => {
@@ -6,9 +7,9 @@ const Page404 = () => {
     <main className="error">
       <p className="error__title">404</p>
       <p className="error__message">Страница не найдена</p>
-      <a href="/" className="error__link">
+      <Link to={-1} className="error__link">
         Назад
-      </a>
+      </Link>
     </main>
   );
 };
